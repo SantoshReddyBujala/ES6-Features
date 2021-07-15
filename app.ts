@@ -6,8 +6,10 @@ let defaultCall = (num1, num2) => {
     let num4 = (<HTMLInputElement>document.getElementById(num2)).value;
     let output = document.getElementById('defaultOutput');
     let callOutput;
-    if (num3 || num4) {
+    if(num3 && num4){
         callOutput = displayDefaultParms(Number(num3), Number(num4))
+    } else if (num3) {
+        callOutput = displayDefaultParms(Number(num3))
     } else {
         callOutput = displayDefaultParms();
     }
