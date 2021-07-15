@@ -15,5 +15,15 @@ let defaultCall = (num1, num2) => {
     }
     output.innerHTML = String(callOutput);
 }
-console.log(displayDefaultParms(5, 10)) // with parameters 
-console.log(displayDefaultParms()) // without parameters
+
+
+// Template Literal
+var tempLit = document.getElementById('tempLit');
+tempLit.innerHTML = `Testing Santosh`;
+let tempLiterals = ():void => {
+let temp:number =10, add1:number =28, add2:number =30;
+document.getElementById('withNum').innerHTML = `Template with Number ${temp}`;
+document.getElementById('arthOpera').innerHTML = `Arithmetic Operation: ${add1 + add2}`;
+}
+
+tempLiterals();
