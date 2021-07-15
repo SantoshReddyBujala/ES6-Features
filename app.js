@@ -29,3 +29,21 @@ var tempLiterals = function () {
     document.getElementById('arthOpera').innerHTML = "Arithmetic Operation: " + (add1 + add2);
 };
 tempLiterals();
+//let and const differences
+var constLetDiff = function () {
+    document.getElementById('letconst').innerHTML = "<div>Dynamic html rendering with template literals </div>";
+    document.getElementById('letVar').innerHTML = "<div>Let Example: it's a block scope</div>";
+    if (true) {
+        var one1 = 123;
+        document.getElementById('output').innerHTML = "<div>Let Scope: " + one1 + "</div>";
+    }
+    // console.log(one1) We can not access one1 out of the block
+    document.getElementById('constVar').innerHTML = "<div>Const Example: it's a block scope and we can't change once assigned value</div>";
+    if (true) {
+        var canAssign = 'Testing Const';
+        document.getElementById('constoutput').innerHTML = "<div>Const Output: " + canAssign + "</div>";
+        //canAssign = 'Re Assign' not possible
+    }
+    // console.log(canAssign) //We can not access one1 out of the block
+};
+constLetDiff();
