@@ -9,8 +9,11 @@ var defaultCall = function (num1, num2) {
     var num4 = document.getElementById(num2).value;
     var output = document.getElementById('defaultOutput');
     var callOutput;
-    if (num3 || num4) {
+    if (num3 && num4) {
         callOutput = displayDefaultParms(Number(num3), Number(num4));
+    }
+    else if (num3) {
+        callOutput = displayDefaultParms(Number(num3));
     }
     else {
         callOutput = displayDefaultParms();
