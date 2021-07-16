@@ -47,3 +47,13 @@ var constLetDiff = function () {
     // console.log(canAssign) //We can not access one1 out of the block
 };
 constLetDiff();
+//Arrow functions 
+// Default/ No parameters function
+var displayArrow = function () { return "Default/ No parameters function"; };
+document.getElementById('defaultAw').innerHTML = displayArrow();
+// Single parameters Arrow function
+var singleArrow = function (param) { return param; };
+document.getElementById('singleAw').innerHTML = singleArrow("Single Parameter: $" + 25.5);
+// Multiple parameters Arrow function
+var multiArrow = function (param1, param2) { return param1 + param2; };
+document.getElementById('multiAw').innerHTML = String("Output " + multiArrow(10, 29)); // innerHTML assign String only and calling method using Template literals
