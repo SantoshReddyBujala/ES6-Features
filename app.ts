@@ -49,3 +49,23 @@ let constLetDiff =():void=> {
 }
 
 constLetDiff();
+
+//Arrow functions 
+
+// Default/ No parameters function
+
+let displayArrow = ():string => `Default/ No parameters function`;
+
+document.getElementById('defaultAw').innerHTML= displayArrow();
+
+// Single parameters Arrow function
+
+let singleArrow = param => param;
+
+document.getElementById('singleAw').innerHTML= singleArrow(`Single Parameter: $${25.5}`);
+
+// Multiple parameters Arrow function
+
+let multiArrow = (param1:number, param2:number):number => param1+param2;
+
+document.getElementById('multiAw').innerHTML= String(`Output ${multiArrow(10,29)}`); // innerHTML assign String only and calling method using Template literals
